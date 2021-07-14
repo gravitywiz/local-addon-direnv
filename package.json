@@ -1,0 +1,47 @@
+{
+  "name": "direnv",
+  "productName": "direnv",
+  "version": "1.0.0",
+  "author": "Gravity Wiz",
+  "keywords": [
+    "local-addon"
+  ],
+  "bgColor": "#51bb7b",
+  "icon": "icon.svg",
+  "slug": "direnv",
+  "description": "Automatically generate .envrc for your Local sites.",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gravitywiz/local-addon-direnv"
+  },
+  "bugs": {
+    "url": "https://github.com/gravitywiz/local-addon-direnv/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "watch": "yarn run build --watch"
+  },
+  "devDependencies": {
+    "@getflywheel/eslint-config-local": "1.0.4",
+    "@getflywheel/local": "^5.0.0",
+    "@types/node": "^12.7.12",
+    "eslint": "^5.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "slash": "^3.0.0"
+  },
+  "bundledDependencies": [
+    "fs-extra",
+    "slash"
+  ],
+  "engines": {
+    "local-by-flywheel": "^5.0.0"
+  }
+}
